@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Univertsity Website Design</title>
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav><a href="index.html"><img src="imagenes/logo.png" alt=""></a>
+            <div class="nav-link" id="navLink">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about_us.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Contactanos</h1>
+
+    </section>
+
+    <!-- ----Contactanos---- -->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.3867307936484!2d-79.52121998579626!3d9.02844109148506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8327dc82e89%3A0xdc298f0eb0e51dc4!2sUniversidad%20Latina%20de%20Panam%C3%A1!5e0!3m2!1ses!2spa!4v1624036547530!5m2!1ses!2spa"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Av Ricardo J. Alfaro</h5>
+                        <p>Centro Comercial El Dorado p.b.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+507 68524145</h5>
+                        <p>Lunes a Sabado, 08:00AM A 06:00PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope-open-text"></i>
+                    <span>
+                        <h5>eduford@gmail.com</h5>
+                        <p>Escribenos tus dudas</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="form-hanled.php" method="POST">
+                    <input type="text" name="name" id="" placeholder="Escribe tu nombre" required>
+                    <input type="email" name="email" id="" placeholder="Escribe tu Email" required>
+                    <input type="text" name="subject" id="" placeholder="Escribe el asunto" required>
+                    <textarea rows="8" name="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Enviar Mensaje</button>
+
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- -------Footer----- -->
+
+    <section class="footer">
+        <h4>Acerca de Nosotros</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse corporis vitae ducimus vel aut, magnam, sunt
+            <br>
+            ipsam adipisci rem ipsa voluptas blanditiis similique, necessitatibus est?</p>
+
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p><i class="fas fa-tools"></i> Hecho por <br> Egdy Barrios <i class="fas fa-laptop-code"></i> </p>
+    </section>
+
+
+
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLink = document.getElementById("navLink");
+
+        function showMenu() {
+
+            navLink.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLink.style.right = "-200px";
+
+        }
+    </script>
+
+
+</body>
+
+</html>

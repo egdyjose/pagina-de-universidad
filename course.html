@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Univertsity Website Design</title>
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav><a href="index.html"><img src="imagenes/logo.png" alt=""></a>
+            <div class="nav-link" id="navLink">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about_us.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Nuestras Carreras</h1>
+
+    </section>
+
+    <!-- -----Course------- -->
+    <section class="course">
+        <h1>Cursos que ofrecemos</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis laborum, cumque velit quibusdam ipsam dolor
+            impedit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermedio</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis pariatur animi nisi natus quo
+                    commodi officia exercitationem! Odit nobis ex harum possimus, voluptatibus natus aut?
+                </p>
+
+            </div>
+            <div class="course-col">
+                <h3>Licenciatura</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis pariatur animi nisi natus quo
+                    commodi officia exercitationem! Odit nobis ex harum possimus, voluptatibus natus aut?
+                </p>
+
+            </div>
+            <div class="course-col">
+                <h3>Post Grado</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis pariatur animi nisi natus quo
+                    commodi officia exercitationem! Odit nobis ex harum possimus, voluptatibus natus aut?
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Instalaciones -->
+
+    <section class="facilities">
+        <h1>Nuestras Instalaciones</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ipsam veniam quia eveniet laboriosam illo
+            molestias illum natus ullam et?</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="imagenes/library.png" alt="#">
+                <h3>Libreria de Primer Nivel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem delectus harum repudiandae
+                    architecto quasi quaerat neque, provident ea, minus omnis veniam modi enim consequatur!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="imagenes/basketball.png" alt="#">
+                <h3>Cancha de Basquet Profesional</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem delectus harum repudiandae
+                    architecto quasi quaerat neque, provident ea, minus omnis veniam modi enim consequatur!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="imagenes/cafeteria.png" alt="#">
+                <h3>Alimentacion Sabrosa y Saludable</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem delectus harum repudiandae
+                    architecto quasi quaerat neque, provident ea, minus omnis veniam modi enim consequatur!</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- -------Footer----- -->
+
+    <section class="footer">
+        <h4>Acerca de Nosotros</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse corporis vitae ducimus vel aut, magnam, sunt
+            <br>
+            ipsam adipisci rem ipsa voluptas blanditiis similique, necessitatibus est?</p>
+
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p><i class="fas fa-tools"></i> Hecho por <br> Egdy Barrios <i class="fas fa-laptop-code"></i> </p>
+    </section>
+
+
+
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLink = document.getElementById("navLink");
+
+        function showMenu() {
+
+            navLink.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLink.style.right = "-200px";
+
+        }
+    </script>
+
+
+</body>
+
+</html>
